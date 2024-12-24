@@ -5,6 +5,8 @@ The data is visualized in **Grafana** and can be tested via a **FastAPI** endpoi
 
 The project divides into two sections: the **ESP32 MQTT publisher** (```ESP32_MQTT_BM.ino```), and the **MQTT subscriber that pushes to InfluxDB** (```app.py```)
 
+![images/pipeline-diagram.png](https://github.com/j-kulp/portfolio/blob/e5d8aaf0b053426ca691c5e1b8806b83e4c09623/images/flow.png)
+
 I suggest following the order of installation here, starting with the ESP32 before finally moving on to the MQTT subscriber section.
 
 ## Requirements
@@ -233,6 +235,11 @@ This will start the Grafana server, and you can access the Grafana dashboard at 
   - Verify that your broker IP, username, and password are correctly configured.
 - InfluxDB connection errors: Double-check the InfluxDB URL, token, and bucket settings.
 - FastAPI server errors: Check the logs for details, ensure all dependencies are installed, and make sure the correct IP addresses/ports are configured.
+
+## Results
+You should have something that starts to resemble this!
+
+![images/pipeline-diagram.png](https://github.com/j-kulp/portfolio/blob/e5d8aaf0b053426ca691c5e1b8806b83e4c09623/images/grafana.png)
 
 
 =====================================================================
